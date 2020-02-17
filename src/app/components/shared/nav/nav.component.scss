@@ -1,0 +1,126 @@
+$base-color: #c43f32;
+
+.navbar {
+  height: 100px;
+  z-index: 10;
+
+  .navbar-brand img {
+    max-width: 80px;
+  }
+
+  .navbar-content {
+    background-color: #ffffff !important;
+  }
+
+  &.bg-light {
+    background-color: #ffffff !important;
+  }
+
+  li.nav-item {
+    font-weight: bold;
+  }
+
+  .fa-info-circle {
+    margin-right: 8px;
+  }
+
+  .info-container {
+    margin-top: 16px !important;
+
+    .info-contacto {
+      position: relative;
+      margin-top: 8px;
+      padding-top: 12px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background-color: $base-color;
+        display: block;
+        border-radius: 3px;
+      }
+    }
+
+    .contact-title {
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .contact-item {
+      color: #747474;
+      margin: 0;
+    }
+
+    .divider {
+      height: 1px;
+      background-color: #000000;
+      margin: 10px 0;
+    }
+  }
+
+  .animate-icon {
+    display: none;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .navbar {
+
+    li.nav-item {
+      margin-left: 20px;
+
+    }
+
+    .fa-info-circle {
+      font-size: 25px;
+    }
+
+    .info-container {
+      position: relative;
+      margin-top: 0 !important;
+      cursor: pointer;
+
+      &:hover {
+
+        .info-contacto {
+          display: block;
+        }
+      }
+
+      span {
+        font-weight: bold;
+        position: relative;
+        top: -3px;
+      }
+
+      .info-contacto {
+        position: absolute;
+        display: none;
+        background-color: #ffffff;
+        width: 100%;
+        padding: 10px;
+        margin-top: -1px;
+        padding-top: 20px;
+        -webkit-box-shadow: 0px 7px 12px -5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 7px 12px -5px rgba(0,0,0,0.75);
+        box-shadow: 0px 7px 12px -5px rgba(0,0,0,0.75);
+
+        &:before {
+          top: 10px;
+        } 
+      }
+    }
+
+    .animate-icon {
+      display: inline-block;
+    }
+
+  }
+
+}

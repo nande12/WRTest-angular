@@ -1,1 +1,67 @@
 /* You can add global styles to this file, and also import other style files */
+$base-color: #c43f32;
+
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.the_icon {
+  color: $base-color;
+}
+
+.container-animate-icon {
+
+  &:hover {
+    .animate-icon {
+      
+      &:before {
+        transform: rotate(-40deg);
+      }
+
+      &:after {
+        transform: rotate(40deg);
+      }
+
+    }
+  }
+
+  .animate-icon {
+    position: relative;
+    width: 14px;
+    height: 8px;
+    display: inline-block;
+    margin-left: 8px;
+
+    &:before,
+    &:after {
+      content: '';
+      width: 9px;
+      height: 2px;
+      display: block;
+      border-radius: 2px;
+      position: absolute;
+      background-color: #000000;
+      transition: all 333ms cubic-bezier(0,0,.1,1);
+      top: 1px;
+    }
+
+    &:before {
+      left: 0;
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      right: 0;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .custom-container {
+    max-width: 1295px !important;
+  }
+
+}
