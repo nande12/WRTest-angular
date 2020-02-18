@@ -34,3 +34,79 @@
     }
   }
 }
+
+@media only screen and (min-width: 768px) {
+
+  .carousel {
+
+    .carousel-item-inner {
+      display: flex;
+      position: relative;
+      justify-content: flex-end;
+    }
+
+    .header-box {
+      position: absolute;
+      z-index: 2;
+      left: -30px;
+      height: 100%;
+      transition: all ease-in .3s;
+
+      .box-inner {
+        background-color: #ffffff;
+        padding: 40px 28px;
+        width: 90%;
+      }
+    }
+
+    .carousel-item.active {
+
+      .header-box {
+        left: 0;
+        transition: all ease-in .3s;
+      }
+
+    }
+
+    .header-image-container {
+      width: 60%;
+      padding-bottom: 40%;
+    }
+
+    .slider-arrows {
+      position: absolute;
+      width: 60%;
+      height: 30px;
+      right: 0;
+      bottom: 0px;
+      z-index: 3;
+
+      .carousel-control-next,
+      .carousel-control-prev {
+        opacity: 1 !important;
+        width: 8%;
+      }
+    }
+
+    .carousel-indicators {
+      width: 40%;
+      margin: 0;
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 20px;
+      bottom: 10px;
+
+      li {
+        width: 16px;
+        height: 16px;
+        opacity: 1;
+        background-color: #000000;
+
+        &.active {
+          background-color: #c43f32;
+        }
+      }
+    }
+  }
+
+}
