@@ -1,5 +1,42 @@
-//Accordion
+.description-box {
+	background-color: #c43f32;
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	padding: 20px 0;
 
+	.desc-box-inner {
+		position: relative;
+		padding-left: 32px;
+
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 12px;
+			height: 100%;
+			background-color: #ffffff;
+
+		}
+	}
+
+	h2 {
+		color: #ffffff;
+		font-weight: 900;
+		font-size: 20px;
+	}
+
+	p {
+		color: #d4d7dc;
+		margin-bottom: 0;
+	}
+}
+
+//Accordion
 .service-title {
 	font-size: 36px;
 	line-height: 40px;
