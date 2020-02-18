@@ -1,1 +1,41 @@
-<p>footer works!</p>
+<div class="footer">
+    <div class="container custom-container navbar-content">
+        
+        <div class="footer-top">
+            <div class="footer-left">
+                <h2>WR Marketing</h2>
+                <ul class="footer-nav">
+                    <li routerLinkActive="active">
+                        <a routerLink="inicio">Inicio</a>
+                    </li>
+                    <li routerLinkActive="active">
+                        <a routerLink="quienes-somos">Quiénes Somos</a>
+                    </li>
+                    <li>
+                        <a href="http://wrmarketing.net/blog/" target="_blank">Blog</a>
+                    </li>
+                    <li routerLinkActive="active">
+                        <a routerLink="contactenos">Contáctenos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-right">
+                <ul class="social-media">
+                    <li><a href="#" target="_blank"> <i class="fab fa-facebook-square"></i> </a></li>
+                    <li><a href="#" target="_blank"> <i class="fab fa-twitter-square"></i> </a></li>
+                    <li><a href="#" target="_blank"> <i class="fab fa-whatsapp-square"></i> </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-left">
+                <p><a routerLink="contactenos" class="footer-link">Visite nuestra sección de Contáctenos <i class="fas fa-envelope-open-text"></i></a></p>
+            </div>
+            <div class="footer-right">
+                <p class="footer-link">©{{ theDate | date:'y' }} WR Marketing</p>
+            </div>
+        </div>
+
+    </div>
+</div>

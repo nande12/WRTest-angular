@@ -1,6 +1,7 @@
 <div id="accordion" class="service-accordion">
-  <h3 class="accordion-title" data-title="1">ATL<div class="ui-icon"></div></h3>
-  <div class="accordion-body" data-accordion="1">
+  <h3 class="accordion-title" data-toggle="collapse" data-target="#collapseOne"
+          aria-expanded="true" aria-controls="collapseOne" >ATL<div class="ui-icon"></div></h3>
+  <div class="accordion-body collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion" >
     <p>Above The Line”, o conocido en español como “por encima de la línea de promoción”, una frase que hace referencia a las actividades publicitarias y de marketing que no están dirigidas a un público objetivo en particular y tienen un gran alcance.</p>
 
     <p>En WR Marketing le asesoraremos para ejecutar la mejor estrategia en medios tradicionales o digitales bajo tres pilares fundamentales:</p>
@@ -8,31 +9,76 @@
     <p>Mejor alcance<br>
       Mejor conexión con la audiencia<br>
       Y facilidad para el brand building</p>
-    <br>
-    <br>
     <ul>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="atl">TV</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="atl">Radio</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="atl">Medios tradicionales escritos</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="atl">Diseño de assets de comunicación</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="atl">Campañas de posicionamiento</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="ATL">TV</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="ATL">Radio</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="ATL">Medios tradicionales escritos</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="ATL">Diseño de assets de comunicación</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="ATL">Campañas de posicionamiento</a></li>
     </ul>
   </div>
-  <h3 class="accordion-title" data-title="2">Trade & BTL<div class="ui-icon"></div></h3>
-  <div class="accordion-body" data-accordion="2">
+
+  <h3 class="accordion-title" data-toggle="collapse" data-target="#collapseTwo"
+          aria-expanded="false" aria-controls="collapseTwo" >BTL<div class="ui-icon"></div></h3>
+  <div class="accordion-body collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion" >
+    <p>Se trata de actividades publicitarias que son específicas, directas y memorables, las cuales tienen como destino grupos
+    particulares de consumidores y no masas como ocurre en las actividades ATL. En ese sentido, el BTL contempla estrategias
+    del marketing directo y aquí las conversiones si se pueden considerar de gran importancia para las marcas o empresas.</p>
+    
+    <p>WR Marketing sigue siendo innovador dirigiendo esfuerzos en:</p>
+    
+    <p>Activaciones dentro y fuera del punto de venta<br>
+    Detectando el mejor medio para patrocinio<br>
+    Product Placement</p>
+
+    <p>Que buscamos?</p>
+    
+    <p>Que sea extremadamente dirigido<br>
+    Buscar un inigualable ROI<br>
+    Fácil control<br>
+    Desarrollo a la medida</p>
     <ul>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="trade_btl">Activaciones</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="trade_btl">Estrategia de Expansión PDV</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="trade_btl">Estrategias de Winning PDV</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="trade_btl">Plan de Incentivos y de fidelidad</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="trade_btl">Custodia de producto icónico</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="trade_btl">Creación de experiencia de producto A, B y C</a>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="BTL">Activaciones</a></li>
+    </ul>
+  </div>
+
+  <!--
+  <h3 class="accordion-title" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+    aria-controls="collapseThree" >Trademarketing<div class="ui-icon"></div>
+  </h3>
+  <div class="accordion-body collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion"
+    >
+    <p>Para que sea exitoso, toda acción de Trade Marketing debe ser debidamente conceptualizada, organizada y coordinada entre
+    los responsables. Nosotros potenciamos él éxito en el punto de venta con personal altamente calificado en todos los
+    niveles de mando.</p>
+    
+    <p>Buscamos la mejor ingeniería de rutas<br>
+    Cobertura<br>
+    Efectividad<br>
+    Custodia del Shelf Space<br>
+    La mejor ejecución de los fundamentales del MKT<br>
+    Entre otros</p>
+    <ul>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal"
+          data-target="#serviceModal" data-type="Trademarketing">Activaciones</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal"
+          data-target="#serviceModal" data-type="Trademarketing">Estrategia de Expansión PDV</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal"
+          data-target="#serviceModal" data-type="Trademarketing">Estrategias de Winning PDV</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal"
+          data-target="#serviceModal" data-type="Trademarketing">Plan de Incentivos y de fidelidad</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal"
+          data-target="#serviceModal" data-type="Trademarketing">Custodia de producto icónico</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal"
+          data-target="#serviceModal" data-type="Trademarketing">Creación de experiencia de producto A, B y C</a>
       </li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="trade_btl">Auditoria del PDV</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal"
+          data-target="#serviceModal" data-type="Trademarketing">Auditoria del PDV</a></li>
     </ul>
   </div>
-  <h3 class="accordion-title" data-title="3">POP y Display<div class="ui-icon"></div></h3>
-  <div class="accordion-body" data-accordion="3">
+  <h3 class="accordion-title" data-toggle="collapse" data-target="#collapseFour"
+          aria-expanded="false" aria-controls="collapseFour" >POP y Display<div class="ui-icon"></div></h3>
+  <div class="accordion-body collapse" id="collapseFour" aria-labelledby="headingFour" data-parent="#accordion" >
     <p>El material POP ( Point of Purchase ) es una categoría del Marketing que recurre a la publicidad puesta en los
       puntos de
       venta, busca generar una permanencia de la marca recurriendo a una gran variedad de objetos donde se puede
@@ -47,89 +93,94 @@
       difusión
       de una marca, categoría o producto con herramientas digitales, gráficas y exhibidores.</p>
     <ul>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="pop_display">Giveaway</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="pop_display">Promocionales</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="pop_display">Merchandising</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="pop_display">Litografía</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="pop_display">Exhibidores</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="pop_display">Stands</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="pop_display">Escenarios</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="POP y Display">Giveaway</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="POP y Display">Promocionales</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="POP y Display">Merchandising</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="POP y Display">Litografía</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="POP y Display">Exhibidores</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="POP y Display">Stands</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="POP y Display">Escenarios</a></li>
     </ul>
   </div>
-  <h3 class="accordion-title" data-title="4">Social Media<div class="ui-icon"></div></h3>
-  <div class="accordion-body" data-accordion="4">
+  <h3 class="accordion-title" data-toggle="collapse" data-target="#collapseFive"
+          aria-expanded="false" aria-controls="collapseFive" >Social Media<div class="ui-icon"></div></h3>
+  <div class="accordion-body collapse" id="collapseFive" aria-labelledby="headingFive" data-parent="#accordion" >
     <ul>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="social_media">Comunidad Digital</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="social_media">Marketing de Contenidos</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="social_media">Desarrollo Digital</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="social_media">Social Analytics</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="social_media">Monitoreo de Marca</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="social_media">Creación de perfiles sociales</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Social Media">Comunidad Digital</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Social Media">Marketing de Contenidos</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Social Media">Desarrollo Digital</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Social Media">Social Analytics</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Social Media">Monitoreo de Marca</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Social Media">Creación de perfiles sociales</a></li>
     </ul>
   </div>
-  <h3 class="accordion-title" data-title="5">MKT Campaign<div class="ui-icon"></div></h3>
-  <div class="accordion-body" data-accordion="5">
+  <h3 class="accordion-title" data-toggle="collapse" data-target="#collapseSix"
+          aria-expanded="false" aria-controls="collapseSix" >MKT Campaign<div class="ui-icon"></div></h3>
+  <div class="accordion-body collapse" id="collapseSix" aria-labelledby="headingSix" data-parent="#accordion" >
     <ul>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="mkt_campaign">Campañas Internas</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="mkt_campaign">Comunicación Institucional</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="mkt_campaign">OOH</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="mkt_campaign">Diseño Plan de medios</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="mkt_campaign">Plan de desarrollo de producto</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="mkt_campaign">Estrategia de comunicación</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="MKT Campaign">Campañas Internas</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="MKT Campaign">Comunicación Institucional</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="MKT Campaign">OOH</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="MKT Campaign">Diseño Plan de medios</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="MKT Campaign">Plan de desarrollo de producto</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="MKT Campaign">Estrategia de comunicación</a></li>
     </ul>
   </div>
-  <h3 class="accordion-title" data-title="6">Retail<div class="ui-icon"></div></h3>
-  <div class="accordion-body" data-accordion="6">
+  <h3 class="accordion-title" data-toggle="collapse" data-target="#collapseSeven"
+          aria-expanded="false" aria-controls="collapseSeven" >Retail<div class="ui-icon"></div></h3>
+  <div class="accordion-body collapse" id="collapseSeven" aria-labelledby="headingSeven" data-parent="#accordion" >
     <ul>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="retail">Layout</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="retail">Category Management</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="retail">Definición de Mix de Producto</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="retail">Preparación de List Price</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="retail">Shopping de precios</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="retail">Clasificación del PDV</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="retail">Benchmark 360°</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Retail">Layout</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Retail">Category Management</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Retail">Definición de Mix de Producto</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Retail">Preparación de List Price</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Retail">Shopping de precios</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Retail">Clasificación del PDV</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Retail">Benchmark 360°</a></li>
     </ul>
   </div>
-  <h3 class="accordion-title" data-title="7">RRHH Outsorsing<div class="ui-icon"></div></h3>
-  <div class="accordion-body" data-accordion="7">
+  <h3 class="accordion-title" data-toggle="collapse" data-target="#collapseEight"
+          aria-expanded="false" aria-controls="collapseEight" >RRHH Outsorsing<div class="ui-icon"></div></h3>
+  <div class="accordion-body collapse" id="collapseEight" aria-labelledby="headingEight" data-parent="#accordion" >
     <ul>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="rrhh_outsorsing">Promotores</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="rrhh_outsorsing">Impulsadores</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="rrhh_outsorsing">Edecanes</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="rrhh_outsorsing">Anfitrionas</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="rrhh_outsorsing">Asesores</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="rrhh_outsorsing">Vendedores</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="rrhh_outsorsing">Assessment</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="RRHH Outsorsing">Promotores</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="RRHH Outsorsing">Impulsadores</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="RRHH Outsorsing">Edecanes</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="RRHH Outsorsing">Anfitrionas</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="RRHH Outsorsing">Asesores</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="RRHH Outsorsing">Vendedores</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="RRHH Outsorsing">Assessment</a></li>
     </ul>
   </div>
-  <h3 class="accordion-title" data-title="8">Gráfico, Digital & Video<div class="ui-icon"></div></h3>
-  <div class="accordion-body" data-accordion="8">
+  <h3 class="accordion-title" data-toggle="collapse" data-target="#collapseNine"
+          aria-expanded="false" aria-controls="collapseNine" >Gráfico, Digital & Video<div class="ui-icon"></div></h3>
+  <div class="accordion-body collapse" id="collapseNine" aria-labelledby="headingNine" data-parent="#accordion" >
     <ul>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="grafico_digital_video">Diseño Gráfico e Imagen corporativa</a>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Gráfico, Digital & Video">Diseño Gráfico e Imagen corporativa</a>
       </li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="grafico_digital_video">Producción Audiovisual</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="grafico_digital_video">Producción Web y Almacenamiento</a>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Gráfico, Digital & Video">Producción Audiovisual</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Gráfico, Digital & Video">Producción Web y Almacenamiento</a>
       </li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="grafico_digital_video">Web Marketing</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="grafico_digital_video">Brand Book</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="grafico_digital_video">Packaging</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="grafico_digital_video">Presentaciones Multimedia</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Gráfico, Digital & Video">Web Marketing</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Gráfico, Digital & Video">Brand Book</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Gráfico, Digital & Video">Packaging</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Gráfico, Digital & Video">Presentaciones Multimedia</a></li>
     </ul>
   </div>
-  <h3 class="accordion-title" data-title="9">Business Inteligence<div class="ui-icon"></div></h3>
-  <div class="accordion-body" data-accordion="9">
+  <h3 class="accordion-title" data-toggle="collapse" data-target="#collapseTen"
+          aria-expanded="false" aria-controls="collapseTen" >Business Inteligence<div class="ui-icon"></div></h3>
+  <div class="accordion-body collapse" id="collapseTen" aria-labelledby="headingTen" data-parent="#accordion" >
     <ul>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="business_inteligence">Análisis de data OPSI</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="business_inteligence">Análisis de Sell Out</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="business_inteligence">Price Sensitivity</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="business_inteligence">Desempeño de portfolio</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="business_inteligence">Tracking de KPI</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="business_inteligence">Diseño de Dashboard</a></li>
-      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="business_inteligence">Diseño de KPI</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Business Inteligence">Análisis de data OPSI</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Business Inteligence">Análisis de Sell Out</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Business Inteligence">Price Sensitivity</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Business Inteligence">Desempeño de portfolio</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Business Inteligence">Tracking de KPI</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Business Inteligence">Diseño de Dashboard</a></li>
+      <li><a href="#" class="openServiceModal" (click)="triggerModal( $event )" data-toggle="modal" data-target="#serviceModal" data-type="Business Inteligence">Diseño de KPI</a></li>
     </ul>
-  </div>
+  </div>-->
 </div>
-
 
 <!-- The Modal -->
 <div id="serviceModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -139,16 +190,19 @@
     <div class="modal-extra">
       <span class="close" data-dismiss="modal">&times;</span>
       <div class="image-container">
-        <div id="modalPhoto" class="modal-photo"></div>
+        <!--Modal Photo-->
+        <div id="modalPhoto" class="modal-photo" [ngStyle]="{'background-image': 'url(' + modalPhoto + ')'}"></div>
       </div>
     </div>
     <div class="modal-body">
-      <h4 class="type" id="modalTypeText"></h4>
-      <h2 id="modalName" class="modal-name"></h2>
-      <p id="modalDescription"></p>
+      <!--Modal Type-->
+      <h4 class="type" id="modalTypeText">{{modalType}}</h4>
+      <!--Modal Name-->
+      <h2 id="modalName" class="modal-name">{{modalName}}</h2>
       <p><i>Para mas información no dude en contactarnos:</i></p>
       <form action="form/modal-form.php" method="post">
 
+        <!--Modal Type and Modal Name-->
         <input type="hidden" value="" id="modal_type" name="modal_type">
 
         <div class="form-group">

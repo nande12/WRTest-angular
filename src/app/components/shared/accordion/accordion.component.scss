@@ -21,15 +21,32 @@
 		border-bottom: 1px solid #d4d7dc ;
 		position: relative;
 		cursor: pointer;
+		margin-bottom: 0;
 
 		&:first-child {
 			border-top: 1px solid #d4d7dc ;
 		}
 
+		&[aria-expanded="true"] {
+			border-bottom: none;
+
+			.ui-icon {
+
+				&:before {
+					animation: openBefore .37s cubic-bezier(.35, 0, .5, 1) forwards;
+				}
+
+				&:after {
+					animation: openAfter .37s cubic-bezier(.35, 0, .5, 1) forwards;
+				}
+
+			}
+		}
+
 		.ui-icon {
 			position: absolute;
 			right: 0;
-			top: 25px;
+			top: 20px;
 			height: 20px;
 			width: 20px;
 			background-image: none!important;
@@ -64,22 +81,6 @@
 				animation: closeAfter .37s cubic-bezier(.35,0,.5,1) backwards;
 			}
 		}
-
-		&.ui-state-active {
-			border-bottom: none;
-
-			.ui-icon {
-
-				&:before {
-					animation: openBefore .37s cubic-bezier(.35,0,.5,1) forwards;
-				}
-
-				&:after {
-					animation: openAfter .37s cubic-bezier(.35,0,.5,1) forwards;
-				}
-
-			}
-		}
 	}
 
 	.accordion-body {
@@ -90,7 +91,7 @@
 
 		ul {
 			margin: 0;
-			padding: 0 0 0 20px;
+			padding: 0 0 20px 20px;
 			list-style: none;
 
 			li {
