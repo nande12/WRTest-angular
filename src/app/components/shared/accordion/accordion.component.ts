@@ -12,6 +12,7 @@ export class AccordionComponent implements OnInit {
   modalName: string = '';
   modalPhoto: string = '';
   modalImages: any = '';
+  modalTypeName: string = '';
 
   constructor( private _modalData: WrService  ) {
     this.modalImages = this._modalData.getModalImages();
@@ -26,6 +27,6 @@ export class AccordionComponent implements OnInit {
     this.modalType = event.srcElement.dataset.type;
     this.modalName = event.srcElement.text;
     this.modalPhoto = this.modalImages[this.modalType].photo;
-
+    this.modalTypeName = `${this.modalType} - ${this.modalName}`;
   }
 }

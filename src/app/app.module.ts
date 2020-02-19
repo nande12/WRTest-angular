@@ -24,7 +24,7 @@ import { AccordionComponent } from './components/shared/accordion/accordion.comp
     NavComponent,
     FooterComponent,
     SliderComponent,
-    AccordionComponent
+    AccordionComponent,
   ],
   imports: [
     BrowserModule,
