@@ -4987,3 +4987,39 @@ body {
 		}
 	}
 }
+
+//Small hero
+.small-hero {
+  min-height: 300px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 99.5vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+
+  h1 {
+    font-weight: 900;
+    background-color: rgba(255, 255, 225520, 0.8);
+    padding: 20px;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  @media (min-width: 768px) {
+    justify-content: start;
+
+    h1 {
+      font-size: 48px;
+      text-align: left;
+      display: inline;
+    }
+  }
+
+}

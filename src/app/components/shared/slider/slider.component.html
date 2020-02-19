@@ -5,13 +5,15 @@
       <div class="carousel-item-inner">
         <div class="header-box">
           <div class="box-inner">
-            <h2 class="header-title">WR<br> Marketing</h2>
-            <p class="header-description">Estamos para servirle, Contáctenos.</p>
+            <a routerLink="/contactenos">
+              <h2 class="header-title">WR<br> Marketing</h2>
+              <p class="header-description">Estamos para servirle, Contáctenos <i class="fas fa-arrow-circle-right"></i></p>
+            </a>
           </div>
         </div>
         <div class="header-image-container">
           <div class="header-image"
-            style="background-image: url('https://www.adweek.com/wp-content/uploads/files/2016_Jan/intuit-logo-hed-2016.png')">
+            style="background-image: url('assets/images/social-media.jpg')">
           </div>
         </div>
       </div>
@@ -21,13 +23,15 @@
       <div class="carousel-item-inner">
         <div class="header-box">
           <div class="box-inner">
-            <h2 class="header-title">Second<br> slide label</h2>
-            <p class="header-description">Click acá para más información.</p>
+            <div class="cliakeable-box" (click)="scrollTo( 'atlAnchor' )">
+              <h2 class="header-title">ATL</h2>
+              <p class="header-description">Click acá para más información <i class="fas fa-arrow-circle-right"></i></p>
+            </div>
           </div>
         </div>
         <div class="header-image-container">
           <div class="header-image"
-            style="background-image: url('https://techcrunch.com/wp-content/uploads/2017/11/intuit.jpg?w=730&crop=1')">
+            style="background-image: url('assets/images/social-media.jpg')">
           </div>
         </div>
       </div>
@@ -37,13 +41,15 @@
       <div class="carousel-item-inner">
         <div class="header-box">
           <div class="box-inner">
-            <h2 class="header-title">Third<br> slide label</h2>
-            <p class="header-description">Click acá para más información.</p>
+            <div class="cliakeable-box" (click)="scrollTo( 'btlAnchor' )">
+              <h2 class="header-title">BTL</h2>
+              <p class="header-description">Click acá para más información <i class="fas fa-arrow-circle-right"></i></p>
+            </div>
           </div>
         </div>
         <div class="header-image-container">
           <div class="header-image"
-            style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYmYBtTgNHL7Eu_iZ35Hy5hv7BVBDL9UEAfVb-FL1uoffxGimAvg&s')">
+            style="background-image: url('assets/images/social-media.jpg')">
           </div>
         </div>
       </div>
@@ -53,13 +59,15 @@
       <div class="carousel-item-inner">
         <div class="header-box">
           <div class="box-inner">
-            <h2 class="header-title">Fourth<br> slide label</h2>
-            <p class="header-description">Click acá para más información.</p>
+            <div class="cliakeable-box" (click)="scrollTo( 'tradeAnchor' )">
+              <h2 class="header-title">Trademarketing</h2>
+              <p class="header-description">Click acá para más información <i class="fas fa-arrow-circle-right"></i></p>
+            </div>
           </div>
         </div>
         <div class="header-image-container">
           <div class="header-image"
-            style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYmYBtTgNHL7Eu_iZ35Hy5hv7BVBDL9UEAfVb-FL1uoffxGimAvg&s')">
+            style="background-image: url('assets/images/social-media.jpg')">
           </div>
         </div>
       </div>
