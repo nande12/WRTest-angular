@@ -311,7 +311,7 @@
 }
 
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 991px) {
 	.modal-content {
 		display: flex;
 		flex-direction: row-reverse;
@@ -325,9 +325,30 @@
 			width: 50%;
 		}
 	}
+
+	.description-box {
+		height: 145px;
+
+		.custom-container {
+			height: 100%;
+			padding-left: 200px;
+		}
+
+		.desc-box-inner {
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding-left: 48px;
+		}
+
+		h2 {
+			font-size: 24px;
+		}
+	}
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 990x) {
 	.image-container {
 		position: relative;
 		padding-bottom: 56%;

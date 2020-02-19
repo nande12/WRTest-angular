@@ -1,12 +1,8 @@
 $base-color: #c43f32;
 
 .navbar {
-  height: 100px;
+  min-height: 100px;
   z-index: 10;
-
-  .navbar-collapse {
-    
-  }
 
   .navbar-brand img {
     max-width: 80px;
@@ -14,6 +10,7 @@ $base-color: #c43f32;
 
   .navbar-content {
     background-color: #ffffff !important;
+    padding: 0 15px;
   }
 
   &.bg-light {

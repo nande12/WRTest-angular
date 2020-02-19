@@ -13,6 +13,7 @@
   .header-title {
     font-size: 36px;
     font-weight: 900;
+    text-transform: uppercase;
   }
 
   .header-description {
@@ -45,6 +46,10 @@
       justify-content: flex-end;
     }
 
+    .header-title {
+      font-size: 24px;
+    }
+
     .header-box {
       position: absolute;
       z-index: 2;
@@ -54,8 +59,8 @@
 
       .box-inner {
         background-color: #ffffff;
-        padding: 40px 28px;
-        width: 90%;
+        padding: 14px 28px;
+        width: 330px;
       }
     }
 
@@ -108,5 +113,54 @@
       }
     }
   }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .carousel {
+
+      .header-image-container {
+        width: 70%;
+      }
+
+      .header-title {
+        font-size: 40px;
+      }
+
+      .header-description {
+        font-size: 20px;
+      }
+
+      .header-box {
+        left: 80px;
+
+        .box-inner {
+          width          : 485px;
+          min-height     : 310px;
+          display        : flex;
+          flex-direction : column;
+          justify-content: center;
+          padding: 40px 28px;;
+        }
+      }
+
+      .carousel-item.active {
+
+        .header-box {
+          left: 115px;
+        }
+
+      }
+
+      .carousel-indicators {
+        width: 30%;
+      }
+
+      .slider-arrows {
+        width: 70%;
+      }
+
+    }
 
 }
