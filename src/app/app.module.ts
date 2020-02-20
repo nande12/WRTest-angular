@@ -14,6 +14,8 @@ import { ROUTES } from './app-routing.module';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { SliderComponent } from './components/shared/slider/slider.component';
 import { AccordionComponent } from './components/shared/accordion/accordion.component';
+import { TazasComponent } from './components/tazas/tazas.component';
+import { PromocionalesComponent } from './components/promocionales/promocionales.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { AccordionComponent } from './components/shared/accordion/accordion.comp
     FooterComponent,
     SliderComponent,
     AccordionComponent,
+    TazasComponent,
+    PromocionalesComponent,
   ],
   imports: [
     BrowserModule,
